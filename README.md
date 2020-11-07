@@ -1,5 +1,6 @@
 # Description
-CheckIT is software for attendance check during lectures. This part contains server application with database. Server application is addapted to work with MySQL database and for test purposes can useinner H2 database. Application automatically generate database schema if the one do not exist.
+CheckIT is software for attendance check during lectures and was created to meet needs of one of studies subjects. This part contains server application with database. The whole project was consisted of server application, browser application, database and ultimately mobile app that use NFC to check attendance. 
+Server application is addapted to work with MySQL database. For test purposes application can use inner H2 database. 
 
 ## Stack
 * Spring boot
