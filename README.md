@@ -20,3 +20,69 @@ In the directory where "checkIT-server.jar" file is located:
 
 ### `java -jar checkIT-server.jar`
 
+
+
+## API
+
+## GET Endpoints
+
+**Returns lecturer schedule for current week. Response contains information about lectures dates, details (course name, course code, building and lecture hall informations, time of lecture star and lecture duration).**
+
+#### `/api/lecturers/{lecturerId}/schedule`
+
+**Returns course overall summary. Information returnet are: course id, code, number
+of all lectures from particular course, list of students with numbers of participated lectures. The presence
+numbers correspond to the order of lectures**
+
+#### `/api/courses/{courseId}/summary`
+
+**Returns all informations about lecture: lecture id, lecturer name, place, date, students
+attendance list**
+
+#### `/api/lectures/{lectureId}/details`
+
+**Returns course overall summary. Information returnet are: course id, code, number
+of all lectures from particular course, list of students with summed number of attendance**
+
+#### `/api/courses/{courseId}/details`
+
+
+**Return all courses that are lectured by the lecturer with dates of particular lectures**
+
+#### `/api/lecturers/{lecturerId}/courses`
+
+## POST Endpoints
+
+**Mark student presence during lecture.**
+
+#### `/api/lectures/presence`
+Body example
+#### {</br>
+
+"lectureId": 6,</br>
+"studentId": 2 </br>
+}</br>
+
+
+**login user to system**
+
+#### `/login`
+
+Body example
+#### {</br>
+
+"email": "111111@student.pwr.wroc.pl", </br>
+"password": "12345678" </br>
+} </br>
+
+
+**Endpoint for user logout**
+
+#### `/api/logout`
+
+Body example
+#### {</br>
+
+"id" : "1", /br>
+"logged" : "false" /br>
+}</br>
