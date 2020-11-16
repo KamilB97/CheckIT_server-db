@@ -24,8 +24,8 @@ In the directory where "checkIT-server.jar" file is located:
 
 ## API
 
-Every Endpoint that starts wit /api requires token in the header. Token is returned after successfull login, in response. 
-Header token syntax {X-Authorization : "Bearer tokenHash"}
+Every Endpoint that starts wit /api requires token in the header. Token is returned after successfull login, in response.  </br>
+Header token syntax: {X-Authorization : "Bearer tokenHash"}
 
 ## GET Endpoints
 
