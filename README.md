@@ -83,6 +83,6 @@ Body example
 Body example
 #### {</br>
 
-"id" : "1", /br>
-"logged" : "false" /br>
+"id" : "1", </br>
+"logged" : "false" </br>
 } </br>
