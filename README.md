@@ -24,6 +24,9 @@ In the directory where "checkIT-server.jar" file is located:
 
 ## API
 
+Every Endpoint that starts wit /api requires token in the header. Token is returned after successfull login, in response. 
+Header token syntax {X-Authorization : "Bearer tokenHash"}
+
 ## GET Endpoints
 
 **Returns lecturer schedule for current week. Response contains information about lectures dates, details (course name, course code, building and lecture hall informations, time of lecture star and lecture duration).**
@@ -64,7 +67,7 @@ Body example
 }</br>
 
 
-**login user to system**
+**login user to system. Returns token that is used for future authorization**
 
 #### `/login`
 
